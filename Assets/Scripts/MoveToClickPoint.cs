@@ -23,7 +23,15 @@ public class MoveToClickPoint : MonoBehaviour
 
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100))
             {
-                agent.destination = hit.point;
+                if (hit.collider.CompareTag("Item") || hit.collider.CompareTag("Wall"))
+                {
+                    agent.isStopped = true;
+                }
+                else
+                {
+                    agent.destination = hit.point;
+                    agent.isStopped = false;
+                }
             }
         }
     }
