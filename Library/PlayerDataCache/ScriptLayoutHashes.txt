@@ -1,7 +1,7 @@
 Android
 176f67aae4ec7273cfef37fd8876bd9a Assembly-CSharp.dll:.GvrDropdown
 c9737d14ba7a2fc69347a243e2d68150 Assembly-CSharp.dll:.HeadsetDemoManager
-b3f5a065151f4788baf469b348282c42 Assembly-CSharp.dll:.Key
+b3f5a065151f4788baf469b348282c42 Assembly-CSharp.dll:.RedKey
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 9f07aaefd0255462bb6e4f9e5da6b2d4 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -134,7 +134,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingRenderer
 64e53bc128400f563a86ade43816f1c3 Assembly-CSharp.dll:.FloatTile
-c091adf3c998ac23cb03fdd275438ea7 Assembly-CSharp.dll:.EmergencyAlarm
+a161c4a6cff2a3d233dd5debd20493bf Assembly-CSharp.dll:.EmergencyAlarm
 3cdbcbe3eecc7b2618bb53f62d0d1466 Assembly-CSharp.dll:.PagedScrollRect
 03f12694d8815c5c1846b514244afecc Assembly-CSharp.dll:.GvrAllEventsTrigger
 8dcc2f1f2300fb8d73cea378ddc8fcc8 Assembly-CSharp.dll:.ChildrenPageProvider
@@ -201,3 +201,5 @@ e399fc54e753911801f12ac57c8fc414 Assembly-CSharp.dll:.GVRDemoManager
 b2945430dfd6bbdb5d77043b47bf85e7 Assembly-CSharp.dll:.GvrControllerReticleVisual
 f1dced04f168103741226c31e59bf1c5 Assembly-CSharp.dll:.Tab
 d885ad79a6ef5bfe2ce10637aac0b8a0 Assembly-CSharp.dll:GVRSample.AutoPlayVideo
+b3f5a065151f4788baf469b348282c42 Assembly-CSharp.dll:.GreenKey
+9113e1a08dc1f33a02b8d231eb2ba268 Assembly-CSharp.dll:.GreenDoor

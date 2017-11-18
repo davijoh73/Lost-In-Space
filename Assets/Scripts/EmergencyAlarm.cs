@@ -5,9 +5,9 @@ using UnityEngine;
 public class EmergencyAlarm : MonoBehaviour {
 
     public GameObject eLight1, eLight2, bridgeLight1, bridgeLight2, bridgeLight3, bridgeLight4;
-    public Material eLightDark, bridgeLightLit;
-    public GameObject eLight1Obj, eLight2Obj, bridgeLight1Obj, bridgeLight2Obj;
-    Material[] eLightMats, bridgeLightMats;
+    public Material eLightDark, bridgeLightLit, buttonLit, buttonDark;
+    public GameObject eLight1Obj, eLight2Obj, bridgeLight1Obj, bridgeLight2Obj, buttonObj;
+    Material[] eLightMats, bridgeLightMats, buttonMats;
     
     // Use this for initialization
 	void Start () {
@@ -17,6 +17,7 @@ public class EmergencyAlarm : MonoBehaviour {
         //Grab the materials for each light object to be changed later
         eLightMats = eLight1Obj.GetComponent<Renderer>().materials;
         bridgeLightMats = bridgeLight1Obj.GetComponent<Renderer>().materials;
+        buttonMats = buttonObj.GetComponent<Renderer>().materials;
     }
 	
 	// Update is called once per frame
@@ -39,9 +40,12 @@ public class EmergencyAlarm : MonoBehaviour {
         //change materials for each light to match new state
         eLightMats[1] = eLightDark;
         bridgeLightMats[1] = bridgeLightLit;
+        buttonMats[1] = buttonDark;
+        buttonMats[0] = buttonLit;
         eLight1Obj.GetComponent<Renderer>().materials = eLightMats;
         eLight2Obj.GetComponent<Renderer>().materials = eLightMats;
         bridgeLight1Obj.GetComponent<Renderer>().materials = bridgeLightMats;
         bridgeLight2Obj.GetComponent<Renderer>().materials = bridgeLightMats;
+        buttonObj.GetComponent<Renderer>().materials = buttonMats;
     }
 }
