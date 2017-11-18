@@ -5,7 +5,6 @@ using UnityEngine.AI;
 
 public class MoveToClickPoint : MonoBehaviour
 {
-
     NavMeshAgent agent;
 
     // Use this for initialization
@@ -20,9 +19,12 @@ public class MoveToClickPoint : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
+            //Cast ray from center of camera viewport (essentially, the reticle point)
+            Vector3 reticle = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
 
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100))
+            if (Physics.Raycast(reticle, Camera.main.transform.forward, out hit, 100.0f))
             {
+                //Do not want to move when clicking on walls or certain items that are interactive
                 if (hit.collider.CompareTag("Item") || hit.collider.CompareTag("Wall"))
                 {
                     agent.isStopped = true;
