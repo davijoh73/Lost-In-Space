@@ -15,6 +15,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 7b848b7feaa524953d09fc1851efa6da UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 7b848b7feaa524953d09fc1851efa6da UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 c24a21b131bfa67be1162db2cba4b52b UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+b3f5a065151f4788baf469b348282c42 Assembly-CSharp.dll:.GreenKey
 90b96b2839cd8159f80ebdc119f2f187 Assembly-CSharp.dll:.PagedScrollBar
 da1c580343244172d67fb46650bbc762 Assembly-CSharp.dll:.ScaleScrollEffect
 228303069e44eb1f7f68e3c0519e6057 Assembly-CSharp.dll:.GvrVideoPlayerTexture
@@ -105,6 +106,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 7b848b7feaa524953d09fc1851efa6da UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 7b848b7feaa524953d09fc1851efa6da UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 c24a21b131bfa67be1162db2cba4b52b UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+9113e1a08dc1f33a02b8d231eb2ba268 Assembly-CSharp.dll:.GreenDoor
 65ccc5e6c5329a006e5b4f0effd4ff6c Assembly-CSharp.dll:.GvrScrollSettings
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DemoSceneManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ObjectPoolManager
@@ -134,7 +136,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingRenderer
 64e53bc128400f563a86ade43816f1c3 Assembly-CSharp.dll:.FloatTile
-a161c4a6cff2a3d233dd5debd20493bf Assembly-CSharp.dll:.EmergencyAlarm
+3df64c7e25f17e8ae57ccf07afc45f8e Assembly-CSharp.dll:.EmergencyAlarm
 3cdbcbe3eecc7b2618bb53f62d0d1466 Assembly-CSharp.dll:.PagedScrollRect
 03f12694d8815c5c1846b514244afecc Assembly-CSharp.dll:.GvrAllEventsTrigger
 8dcc2f1f2300fb8d73cea378ddc8fcc8 Assembly-CSharp.dll:.ChildrenPageProvider
@@ -185,7 +187,7 @@ f12b46990184302ae413ff95cea31566 Assembly-CSharp.dll:.FadeScrollEffect
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TileScrollEffect
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.VideoControlsManager
 81dc5af3744a08050494c77f5012051e Assembly-CSharp.dll:.GvrPointerGraphicRaycaster
-9113e1a08dc1f33a02b8d231eb2ba268 Assembly-CSharp.dll:.RedDoor
+b83ad4906fef2efe4d2614e3bd2a5f7b Assembly-CSharp.dll:.RedDoor
 5d708ead9a8a3f8af542fec349ed718c Assembly-CSharp.dll:Gvr.Internal.EmulatorConfig
 a8b185f93b85036e13e3f553c802615a Assembly-CSharp.dll:.GvrTooltip
 764d2ecb131d46720e1b8d63b8f7c2ba Assembly-CSharp.dll:.KeyboardDelegateExample
@@ -201,5 +203,3 @@ e399fc54e753911801f12ac57c8fc414 Assembly-CSharp.dll:.GVRDemoManager
 b2945430dfd6bbdb5d77043b47bf85e7 Assembly-CSharp.dll:.GvrControllerReticleVisual
 f1dced04f168103741226c31e59bf1c5 Assembly-CSharp.dll:.Tab
 d885ad79a6ef5bfe2ce10637aac0b8a0 Assembly-CSharp.dll:GVRSample.AutoPlayVideo
-b3f5a065151f4788baf469b348282c42 Assembly-CSharp.dll:.GreenKey
-9113e1a08dc1f33a02b8d231eb2ba268 Assembly-CSharp.dll:.GreenDoor

@@ -209,6 +209,7 @@
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrUIHelpers.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
     <Compile Include="Assets\Scripts\CountdownTimer.cs" />
+    <Compile Include="Assets\Scripts\CrewDoor.cs" />
     <Compile Include="Assets\Scripts\EmergencyAlarm.cs" />
     <Compile Include="Assets\Scripts\GreenDoor.cs" />
     <Compile Include="Assets\Scripts\GreenKey.cs" />
