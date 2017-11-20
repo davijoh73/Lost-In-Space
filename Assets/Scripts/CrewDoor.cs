@@ -18,7 +18,7 @@ public class CrewDoor : MonoBehaviour
 
     void Update() {
         //If door is unlocked and not fully raised, continue raising door
-        if (openDoor && rightSide.transform.position.z < 1.5f)
+        if (openDoor && leftSide.transform.position.x < 0.7154884f)
         {
             rightSide.transform.Translate(0, 0, 0.5f * Time.deltaTime, Space.World);
             leftSide.transform.Translate(0, 0, -0.5f * Time.deltaTime, Space.World);

@@ -12,6 +12,7 @@ public class GreenDoor : MonoBehaviour
     public GvrAudioSource soundSource;
     public AudioClip doorLocked;
     public AudioClip doorOpen;
+    public GameObject accessDenied, accessGranted;
 
     void Update() {
         //If door is unlocked and not fully raised, continue raising door
@@ -24,6 +25,10 @@ public class GreenDoor : MonoBehaviour
     public void OnDoorClicked() {
         if (locked == false)
         {
+            //Change the message on the access panel
+            accessDenied.SetActive(false);
+            accessGranted.SetActive(true);
+
             //Trigger the door to open via animation script and play opening door sound
             openDoor = true;
             soundSource.clip = doorOpen;

@@ -9,9 +9,11 @@ public class EmergencyAlarm : MonoBehaviour {
     public Material eLightDark, bridgeLightLit, buttonLit, buttonDark;
     public GameObject eLight1Obj, eLight2Obj, bridgeLight1Obj, bridgeLight2Obj, buttonObj;
     Material[] eLightMats, bridgeLightMats, buttonMats;
-    
+    public GvrAudioSource soundSource;
+    public AudioClip buttonPressSound;
+
     // Use this for initialization
-	void Start () {
+    void Start () {
 
         //Start audio for alarm Klaxons
 
@@ -31,6 +33,10 @@ public class EmergencyAlarm : MonoBehaviour {
         //Stop alarm audio
         alarm1.Stop();
         alarm2.Stop();
+
+        //Play button press sound
+        soundSource.clip = buttonPressSound;
+        soundSource.Play();
 
         //Turn on normal lighting
         //eLight1.SetActive(false);

@@ -3,36 +3,59 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CountdownTimer : MonoBehaviour {
+public class CountdownTimer : MonoBehaviour
+{
+    public int Minutes = 0;
+    public int Seconds = 0;
 
-    float totalTime = 600f; //10 minutes
-    private object timer;
+    private Text m_text;
+    public static float m_leftTime;
 
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        totalTime -= Time.deltaTime;
-        UpdateLevelTimer(totalTime);
+    private void Awake()
+    {
+        m_text = GetComponent<Text>();
+        m_leftTime = GetInitialTime();
     }
 
-    public void UpdateLevelTimer(float totalSeconds)
+    private void Update()
     {
-        int minutes = Mathf.FloorToInt(totalSeconds / 60f);
-        int seconds = Mathf.RoundToInt(totalSeconds % 60f);
-
-        string formatedSeconds = seconds.ToString();
-
-        if (seconds == 60)
+        if (m_leftTime > 0f)
         {
-            seconds = 0;
-            minutes += 1;
-        }
+            //  Update countdown clock
+            m_leftTime -= Time.deltaTime;
+            Minutes = GetLeftMinutes();
+            Seconds = GetLeftSeconds();
 
-        //timer.text = minutes.ToString("00") + ":" + seconds.ToString("00");
-        GameObject.Find("Timer").GetComponent<Text>().text = formatedSeconds;
+            //  Show current clock
+            if (m_leftTime > 0f)
+            {
+                m_text.text = "Time to reactor failure : " + Minutes + ":" + Seconds.ToString("00");
+            }
+            else
+            {
+                //  The countdown clock has finished
+                m_text.text = "Uh oh!!";
+            }
+        }
+    }
+
+    private float GetInitialTime()
+    {
+        return Minutes * 60f + Seconds;
+    }
+
+    private int GetLeftMinutes()
+    {
+        return Mathf.FloorToInt(m_leftTime / 60f);
+    }
+
+    private int GetLeftSeconds()
+    {
+        return Mathf.FloorToInt(m_leftTime % 60f);
+    }
+
+    public void AddTime(float extraTime)
+    {
+        m_leftTime += extraTime;
     }
 }

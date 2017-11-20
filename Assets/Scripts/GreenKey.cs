@@ -7,6 +7,8 @@ public class GreenKey : MonoBehaviour
     //Create a reference to the Door
     public GameObject theDoor;
     public static bool keyCollected = false;
+    public GvrAudioSource soundSource;
+    public AudioClip keyCardSound;
 
     void Update()
 	{
@@ -21,6 +23,9 @@ public class GreenKey : MonoBehaviour
         keyCollected = true;
         // Destroy the key. Check the Unity documentation on how to use Destroy
         Destroy(gameObject, 0.2f);
+        //Play sound to indicate key card being collected
+        soundSource.clip = keyCardSound;
+        soundSource.Play();
     }
 
 }
