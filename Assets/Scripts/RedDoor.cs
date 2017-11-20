@@ -6,12 +6,14 @@ public class RedDoor : MonoBehaviour
 {
     //The locked variable is used in the Unlock method to "unlock" the door
     public bool locked = true;
+    public bool alarm = true;
     //Trigger used to open the door once it's unlocked
     public bool openDoor = false;
     //Sound clips used for when the door is locked, and when it's opened
     public GvrAudioSource soundSource;
     public AudioClip doorLocked;
     public AudioClip doorOpen;
+    public GameObject accessDenied, accessGranted;
 
     void Update() {
         //If door is unlocked and not fully raised, continue raising door
@@ -22,8 +24,12 @@ public class RedDoor : MonoBehaviour
     }
 
     public void OnDoorClicked() {
-        if (locked == false)
+        if (locked == false && alarm == false)
         {
+            //Change the message on the access panel
+            accessDenied.SetActive(false);
+            accessGranted.SetActive(true);
+            
             //Trigger the door to open via animation script and play opening door sound
             openDoor = true;
             soundSource.clip = doorOpen;
@@ -41,5 +47,11 @@ public class RedDoor : MonoBehaviour
     {
         //Call this method to unlock the door
         locked = false;
+    }
+
+    public void Alarm()
+    {
+        //Call this method when alarm system is disabled
+        alarm = false;
     }
 }
