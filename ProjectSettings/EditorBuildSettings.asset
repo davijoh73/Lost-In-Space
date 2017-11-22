@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StartMenu.unity
+    guid: 7556f15f527ff64459b6ec2c0a65dc8b
+  - enabled: 1
+    path: Assets/Scenes/FloatingShip.unity
+    guid: 598c0ddf8a8002945b688851c95f011d

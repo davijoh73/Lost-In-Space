@@ -213,8 +213,10 @@
     <Compile Include="Assets\Scripts\CountdownTimer.cs" />
     <Compile Include="Assets\Scripts\CrewDoor.cs" />
     <Compile Include="Assets\Scripts\EmergencyAlarm.cs" />
+    <Compile Include="Assets\Scripts\ExitApp.cs" />
     <Compile Include="Assets\Scripts\GreenDoor.cs" />
     <Compile Include="Assets\Scripts\GreenKey.cs" />
+    <Compile Include="Assets\Scripts\LoadScene.cs" />
     <Compile Include="Assets\Scripts\MoveToClickPoint.cs" />
     <Compile Include="Assets\Scripts\PowerTransfer.cs" />
     <Compile Include="Assets\Scripts\ReactorShutdown.cs" />

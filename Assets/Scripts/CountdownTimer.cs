@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CountdownTimer : MonoBehaviour
 {
-    public int Minutes = 0;
+    public int Minutes = 10;
     public int Seconds = 0;
 
     private Text m_text;
@@ -22,23 +22,20 @@ public class CountdownTimer : MonoBehaviour
     {
         if (m_leftTime > 0f)
         {
-            if (Timer)
-            {
-                //  Update countdown clock
-                m_leftTime -= 0.25f *Time.deltaTime;
-                Minutes = GetLeftMinutes();
-                Seconds = GetLeftSeconds();
-            }
+            //  Update countdown clock
+            m_leftTime -= Time.deltaTime;
+            Minutes = GetLeftMinutes();
+            Seconds = GetLeftSeconds();
 
             //  Show current clock
             if (m_leftTime > 0f)
             {
-                m_text.text = "Time to reactor failure : " + Minutes + ":" + Seconds.ToString("00");
+                m_text.text = "Time : " + Minutes + ":" + Seconds.ToString("00");
             }
             else
             {
                 //  The countdown clock has finished
-                m_text.text = "***Reactor has gone critical***";
+                m_text.text = "Time : 0:00";
             }
         }
     }
