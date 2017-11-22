@@ -9,6 +9,7 @@ public class CountdownTimer : MonoBehaviour
     public int Seconds = 0;
 
     private Text m_text;
+    private bool Timer = true;
     public static float m_leftTime;
 
     private void Awake()
@@ -21,10 +22,13 @@ public class CountdownTimer : MonoBehaviour
     {
         if (m_leftTime > 0f)
         {
-            //  Update countdown clock
-            m_leftTime -= Time.deltaTime;
-            Minutes = GetLeftMinutes();
-            Seconds = GetLeftSeconds();
+            if (Timer)
+            {
+                //  Update countdown clock
+                m_leftTime -= 0.25f *Time.deltaTime;
+                Minutes = GetLeftMinutes();
+                Seconds = GetLeftSeconds();
+            }
 
             //  Show current clock
             if (m_leftTime > 0f)
@@ -34,7 +38,7 @@ public class CountdownTimer : MonoBehaviour
             else
             {
                 //  The countdown clock has finished
-                m_text.text = "Uh oh!!";
+                m_text.text = "***Reactor has gone critical***";
             }
         }
     }
@@ -57,5 +61,10 @@ public class CountdownTimer : MonoBehaviour
     public void AddTime(float extraTime)
     {
         m_leftTime += extraTime;
+    }
+
+    public void StopTimer()
+    {
+        Timer = false;
     }
 }

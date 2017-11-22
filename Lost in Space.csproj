@@ -217,6 +217,7 @@
     <Compile Include="Assets\Scripts\GreenKey.cs" />
     <Compile Include="Assets\Scripts\MoveToClickPoint.cs" />
     <Compile Include="Assets\Scripts\PowerTransfer.cs" />
+    <Compile Include="Assets\Scripts\ReactorShutdown.cs" />
     <Compile Include="Assets\Scripts\RedDoor.cs" />
     <Compile Include="Assets\Scripts\RedKey.cs" />
   </ItemGroup>
