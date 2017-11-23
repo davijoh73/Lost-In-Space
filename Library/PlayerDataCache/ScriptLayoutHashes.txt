@@ -169,9 +169,11 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 5f2ad81aa8994e8fbe25d1e57afe6773 UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LoadScene
 ec7197ab43ffb42a7321b609332a9861 Assembly-CSharp.dll:.GvrControllerVisualManager
 1f3a68064dbfa3445b5941d1d23a8ce5 Assembly-CSharp.dll:.GvrPointerPhysicsRaycaster
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GvrHeadset
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ExitApp
 145a2fa61e986ff4b79d8ce7959fc905 Assembly-CSharp.dll:.GvrRecenterOnlyController
 773659ee139465de815012b250038305 Assembly-CSharp.dll:.VideoPlayerReference
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.InstantPreviewHelper
@@ -181,6 +183,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingRenderer
+f0502d7bf52d331698390ce0b7c73d18 Assembly-CSharp.dll:.ReactorShutdown
 eca6588934e978a74735e6737af683a8 Assembly-CSharp.dll:.GvrReticlePointer
 4b8ea17c4350779db30d026c2281dfcb Assembly-CSharp.dll:.PooledPageProvider
 2a13deadfd379d1bb4ab0ebd2c20ca7e Assembly-CSharp.dll:.GvrLaserVisual
@@ -193,7 +196,7 @@ f12b46990184302ae413ff95cea31566 Assembly-CSharp.dll:.FadeScrollEffect
 b83ad4906fef2efe4d2614e3bd2a5f7b Assembly-CSharp.dll:.RedDoor
 5d708ead9a8a3f8af542fec349ed718c Assembly-CSharp.dll:Gvr.Internal.EmulatorConfig
 a8b185f93b85036e13e3f553c802615a Assembly-CSharp.dll:.GvrTooltip
-31f2dc48459d79798f7cc2043215c0b4 Assembly-CSharp.dll:.PowerTransfer
+12ac5d5a00b8e19335ebc0a548659dd8 Assembly-CSharp.dll:.PowerTransfer
 764d2ecb131d46720e1b8d63b8f7c2ba Assembly-CSharp.dll:.KeyboardDelegateExample
 6b8bc70a4e737406cfd584f788ef5376 Assembly-CSharp.dll:.GvrAudioSource
 c5839a4d51b9b5220e5cc04a930d6b3f Assembly-CSharp.dll:.UIFadeTransition
@@ -207,3 +210,4 @@ e399fc54e753911801f12ac57c8fc414 Assembly-CSharp.dll:.GVRDemoManager
 b2945430dfd6bbdb5d77043b47bf85e7 Assembly-CSharp.dll:.GvrControllerReticleVisual
 f1dced04f168103741226c31e59bf1c5 Assembly-CSharp.dll:.Tab
 d885ad79a6ef5bfe2ce10637aac0b8a0 Assembly-CSharp.dll:GVRSample.AutoPlayVideo
+8362dfabe903308f495e829cd6251de6 Assembly-CSharp.dll:.TimerUpdate

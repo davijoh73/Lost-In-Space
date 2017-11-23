@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PowerTransfer : MonoBehaviour {
 
-    public GameObject timerHud, buttonObj, firstScreen, secondScreen;
+    public GameObject timer, buttonObj, firstScreen, secondScreen;
     public Material buttonLit, buttonDark;
     Material[] buttonMats;
     public GvrAudioSource soundSource;
@@ -23,7 +23,7 @@ public class PowerTransfer : MonoBehaviour {
     public void ButtonPress()
     {
         //Add two minutes to the game countdown timer
-        timerHud.GetComponent<CountdownTimer>().AddTime(120f);
+        timer.GetComponent<CountdownTimer>().AddTime(120f);
 
         //Play button press sound
         soundSource.clip = buttonPressSound;

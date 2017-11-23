@@ -9,6 +9,7 @@ public class CountdownTimer : MonoBehaviour
     public int Seconds = 0;
 
     private Text m_text;
+    private bool Timer = true;
     public static float m_leftTime;
 
     private void Awake()
@@ -22,12 +23,12 @@ public class CountdownTimer : MonoBehaviour
         if (m_leftTime > 0f)
         {
             //  Update countdown clock
-            m_leftTime -= .25f * Time.deltaTime;
+            m_leftTime -= Time.deltaTime;
             Minutes = GetLeftMinutes();
             Seconds = GetLeftSeconds();
 
             //  Show current clock
-            if (m_leftTime > 0f)
+            /*if (m_leftTime > 0f)
             {
                 m_text.text = "Time to reactor failure : " + Minutes + ":" + Seconds.ToString("00");
             }
@@ -35,7 +36,7 @@ public class CountdownTimer : MonoBehaviour
             {
                 //  The countdown clock has finished
                 m_text.text = "Uh oh!!";
-            }
+            }*/
         }
     }
 
@@ -44,12 +45,12 @@ public class CountdownTimer : MonoBehaviour
         return Minutes * 60f + Seconds;
     }
 
-    private int GetLeftMinutes()
+    public int GetLeftMinutes()
     {
         return Mathf.FloorToInt(m_leftTime / 60f);
     }
 
-    private int GetLeftSeconds()
+    public int GetLeftSeconds()
     {
         return Mathf.FloorToInt(m_leftTime % 60f);
     }
@@ -57,5 +58,10 @@ public class CountdownTimer : MonoBehaviour
     public void AddTime(float extraTime)
     {
         m_leftTime += extraTime;
+    }
+
+    public void StopTimer()
+    {
+        Timer = false;
     }
 }
