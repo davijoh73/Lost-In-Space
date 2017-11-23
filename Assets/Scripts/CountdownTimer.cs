@@ -22,7 +22,7 @@ public class CountdownTimer : MonoBehaviour
         if (m_leftTime > 0f)
         {
             //  Update countdown clock
-            m_leftTime -= Time.deltaTime;
+            m_leftTime -= .25f * Time.deltaTime;
             Minutes = GetLeftMinutes();
             Seconds = GetLeftSeconds();
 
