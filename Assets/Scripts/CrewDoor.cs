@@ -17,12 +17,18 @@ public class CrewDoor : MonoBehaviour
     public GameObject rightSide, leftSide;
 
     void Update() {
-        //If door is unlocked and not fully raised, continue raising door
-        if (openDoor && leftSide.transform.position.x < 0.7154884f)
+
+        //If door is unlocked and not fully open, continue opening door
+        if (leftSide != null)
         {
-            rightSide.transform.Translate(0, 0, 0.5f * Time.deltaTime, Space.World);
-            leftSide.transform.Translate(0, 0, -0.5f * Time.deltaTime, Space.World);
+            if (openDoor && leftSide.transform.position.x < 0.71595f)
+            {
+                rightSide.transform.Translate(0, 0, 0.5f * Time.deltaTime, Space.World);
+                leftSide.transform.Translate(0, 0, -0.5f * Time.deltaTime, Space.World);
+
+            }
         }
+
     }
 
     public void OnDoorClicked() {
@@ -32,6 +38,8 @@ public class CrewDoor : MonoBehaviour
             openDoor = true;
             soundSource.clip = doorOpen;
             soundSource.Play();
+            Destroy(leftSide, 2.5f);
+            Destroy(rightSide, 2.5f);
         }
         else
         {

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.AI;
 
 public class CountdownTimer : MonoBehaviour
 {
@@ -12,20 +13,26 @@ public class CountdownTimer : MonoBehaviour
     private bool Timer = true;
     public static float m_leftTime;
 
+    NavMeshAgent agent;
+
     private void Awake()
     {
         m_text = GetComponent<Text>();
         m_leftTime = GetInitialTime();
+        agent = GetComponent<NavMeshAgent>();
     }
 
     private void Update()
     {
         if (m_leftTime > 0f)
         {
-            //  Update countdown clock
-            m_leftTime -= Time.deltaTime;
-            Minutes = GetLeftMinutes();
-            Seconds = GetLeftSeconds();
+            if (Timer)
+            {
+                //  Update countdown clock
+                m_leftTime -= Time.deltaTime;
+                Minutes = GetLeftMinutes();
+                Seconds = GetLeftSeconds();
+            }
 
             //  Show current clock
             /*if (m_leftTime > 0f)
@@ -37,6 +44,13 @@ public class CountdownTimer : MonoBehaviour
                 //  The countdown clock has finished
                 m_text.text = "Uh oh!!";
             }*/
+        }
+        else
+        {
+            //Stop navmesh agent and display game over splash screen with option to restart or exit
+            agent.isStopped = true;
+            m_leftTime = 0;
+
         }
     }
 

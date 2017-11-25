@@ -257,6 +257,7 @@
     <Compile Include="Assets\Scripts\BlueKey.cs" />
     <Compile Include="Assets\Scripts\CountdownTimer.cs" />
     <Compile Include="Assets\Scripts\CrewDoor.cs" />
+    <Compile Include="Assets\Scripts\DoorNoKey.cs" />
     <Compile Include="Assets\Scripts\EmergencyAlarm.cs" />
     <Compile Include="Assets\Scripts\ExitApp.cs" />
     <Compile Include="Assets\Scripts\GreenDoor.cs" />

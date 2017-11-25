@@ -13,7 +13,7 @@ public class RedDoor : MonoBehaviour
     public GvrAudioSource soundSource;
     public AudioClip doorLocked;
     public AudioClip doorOpen;
-    public GameObject accessDenied, accessGranted;
+    public GameObject accessDenied, accessGranted, nextSection;
 
     void Update() {
         //If door is unlocked and not fully raised, continue raising door
@@ -26,6 +26,9 @@ public class RedDoor : MonoBehaviour
     public void OnDoorClicked() {
         if (locked == false && alarm == false)
         {
+            //Activate next section of ship previously hidden for performance improvement
+            nextSection.SetActive(true);
+
             //Change the message on the access panel
             accessDenied.SetActive(false);
             accessGranted.SetActive(true);
