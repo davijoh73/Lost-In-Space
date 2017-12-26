@@ -4,9 +4,9 @@ Google VR SDK: Version 1.110.0
 # Lost in Space
 This is my capstone project for the Udacity VR Nanodegree program, called Lost in Space.  This is a short game, in which you are stranded on a ship in space, and have only minutes to shutdown the failing primary reactor to save yourself and the ship, or you will be lost in space forever.  In order to navigate throughout the ship, you must find several hidden key cards, that will grant you access through locked doors to different areas of the ship that you can explore.  This was a fun project to work on, and I really enjoyed using the skills that I learned throughout the VR Nanodegree program to make a fully interactive game for people to play.
 
-![alt text](Screenshots/Screenshot_1.jpg "In-game screenshot")
+[In-game screenshot](Screenshots/Screenshot_1.JPG)
 
-![alt text](Screenshots/Screenshot_2.jpg "Another in-game screenshot")
+[Another in-game screenshot](Screenshots/Screenshot_2.JPG)
 
 ## Installation
 * If you own an Android phone, you can install the app by simply copying the `Lost In Space.apk` file from the **Build** directory onto your android device, and installing the apk by clicking on it from the file manager.
