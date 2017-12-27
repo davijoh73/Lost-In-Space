@@ -22,7 +22,7 @@ As I began building my VR app, and implementing all of the necessary game mechan
 
 During the final stages of building my VR app, I discovered the post processing stack in the Unity store.  This nifty addition to my project uses scripts to improve the overall appearance of the VR objects in my application, while still maintaining a high rate of performance on a mobile device, by using the processing power of the computer being used for development during compilation and building of the app. Although this wasn't necessary for any of the achievments required for completion of this project, I still thought it was worth calling out.
 
-You can view a video walkthrough of my app [here](Screenshots/LostInSpace_Walkthrough.mp4). Here is the list of achievements contained in my project, points scored, and a brief description of each:
+You can view a video walkthrough of my app [here](https://youtu.be/u3nr0f7m6NM). Here is the list of achievements contained in my project, points scored, and a brief description of each:
 **Fundamentals**
 * Scale (100) - Verified proper scale of ship and objects during user testing
 * Animation (100) - There are multiple doors of various types that can be opened by the user
