@@ -27,6 +27,7 @@ During the final stages of building my VR app, I discovered the post processing 
 You can view a video walkthrough of my app -> [here](https://youtu.be/u3nr0f7m6NM). 
 
 Here is the list of achievements contained in my project, points scored, and a brief description of each:
+
 **Fundamentals**
 * Scale (100) - Verified proper scale of ship and objects during user testing
 * Animation (100) - There are multiple doors of various types that can be opened by the user
@@ -35,7 +36,7 @@ Here is the list of achievements contained in my project, points scored, and a b
 * Physics (200) - Simulated gravity using navmesh, allowing player to only move on floor and steps, x2 if lighting achievment is completed
 **Total: 600**
 
-**Comleteness**
+**Completeness**
 * Gamification (250) - Countdown timer to add pressure to find goal, key cards to control flow of game play
 * Diegetic UI (250) - Using a point and click system for movement, lighted buttons, and color-coded key cards, it is easy for a user to figure out how to play this game right from the start
 * Alternative Storyline (250) - Switch in the lab adds additional time to the countdown timer, which may just be the different between success and failure
